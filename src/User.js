@@ -15,7 +15,7 @@ const BookList = () => {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/getBooks'); // Replace with your PHP backend endpoint
+      const response = await axios.get('https://lms-backend-ytii.onrender.com/getBooks'); // Replace with your PHP backend endpoint
       setBooks(response.data);
     } catch (error) {
       console.error('Error fetching books:', error);
@@ -47,7 +47,7 @@ const BookList = () => {
   const handleBorrowBooks = async () => {
     try {
       // Send a request to your PHP backend to handle the borrow books action
-      const response = await axios.post('http://localhost:8000/borrow_books.php', {
+      const response = await axios.post('https://lms-backend-ytii.onrender.com/borrow_books.php', {
         selectedBooks: selectedBooks,
       });
 

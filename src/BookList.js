@@ -10,7 +10,7 @@ const BookList = () => {
 
   const fetchBooks = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/getBooks');
+      const response = await axios.get('https://lms-backend-ytii.onrender.com/getBooks');
       setBooks(response.data);
     } catch (error) {
       console.error('Error fetching books:', error);
@@ -25,7 +25,7 @@ const BookList = () => {
     }
 
     try {
-      await axios.delete('http://localhost:8000/deleteBook', { data: book });
+      await axios.delete('https://lms-backend-ytii.onrender.com/deleteBook', { data: book });
       console.log('Book deleted successfully!');
       fetchBooks(); // Refresh the book list after deletion
     } catch (error) {
