@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#a7fcff /* Light silver background */
+}
+
+.container-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #c0c0c0; /* Medium silver border */
+  border-radius: 10px;
+  background-color: #a7fcff; /* Slightly darker silver background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1 {
+  color: #030303; /* Dark silver color for the heading */
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+button {
+  background-color: #28a05a; /* Dark silver color for the button */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #5aba7a; /* Light silver color on hover */
+  color: #141616; /* White text color on hover */
+}
